@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio_5</title>
+</head>
+
+<body>
+    <!-- SI EL FORMULARIO TIENE UN INPUT FILE EL FORMULARIO TIENE QUE TENER EL ATRIBUTO ENCTYPE="MULTIPART/FORM-DAT" -->
+    <form action="" method="post">
+        <fieldset>
+            <!-- LOS HA SEPARADO CON DIVS TODOS Y CADA UNO DE ELLOS -->
+            <legend>Identificación</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <!-- HA AÑADIDO PLACEHOLDER="INTRODUCE TU NOMBRE Y ASI CON TODOS" -->
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad">
+        </fieldset>
+        <fieldset>
+            <legend>Contacto</legend>
+            <!-- CIUDAD LO HA PUEDO CON SELECT EN VEZ DE INPUT Y LUEGO HA AÑADIDO OPTION VALUE Y UNA OPCION SELECTED, QUE CON ESTA OPCION SELECTED YA NO HARIA FALTA EL LABEL-->
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </fieldset>
+
+        <fieldset>
+            <!-- EL ATRIBUTO ACCEPT TE PERMITE ELEGIR LA EXTENSION DE ARCHIVO QUE SE PERMITE SUBIR -->
+            <legend>Imagen</legend>
+            <label for="imagen">Imagen</label>
+            <input type="file" id="imagen">
+        </fieldset>
+        <fieldset>
+            <legend>Sobre ti</legend>
+            <!-- NO IMPORTA LO QUE TE GUSTE, AQUI NO SE USA TEXTAREA, SINO UN SELECT MULTIPLE  - AL FINAL HA USADO UN INPUT LIST Y UNA ETIQUETA DOBLE LLAMADA DATALIST Y CON LA MISMA ID QUE EL ATRIBUTO LIST DEL INPUT Y COMO CONTENIDO DEL DATALIST ETIQUETAS DE OPTION. ESTO ES PARA QUE TU ESCRIBAS Y VAYA COMPLETANDO - PERO NO LA HEMOS SABIDO USAR DEL TODO BIEN-->
+            <label for="aficiones">Aficiones</label>
+            <textarea id="aficiones"></textarea>
+            <!-- AQUI SI HA USADO UN TEXTAREA Y LE HA PUESTO UN MAX-LENGHT UN COLS Y UN ROWS -->
+            <label for="presentacion">Breve Presentación</label>
+            <textarea id="presentacion"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Suscripción</legend>
+            <!-- AQUI HA USADO EL INPUT CHECKBOX Y TÚ ADEMAS HAS PUESTO LABEL NOMBRE -->
+            <label for="nombre">Suscripción al newsletter</label>
+            <input type="radio" name="Suscripción al newsletter" value="si" id="Suscripción al newsletter">Si
+            <input type="radio" name="Suscripción al newsletter" value="no" id="Suscripción al newsletter">No
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
